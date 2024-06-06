@@ -3,7 +3,6 @@ import CTA from "@/components/CTA";
 import {Hero} from "@/components/Hero";
 import KeybProblem from "@/components/KeybProblem";
 import { Crousel } from "@/components/Crousel";
-import Image from "next/image";
 import Infinitecrousel from "@/components/ui/infinite-crousel";
 import Review from "@/components/Review";
 import Problem from "@/components/Problem";

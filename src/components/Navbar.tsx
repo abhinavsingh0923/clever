@@ -10,11 +10,6 @@ export const Navbar = () => {
   const path = usePathname().split("/")[1];
   const NavLinks: { name: string; href: string }[] = [
     { name: "Home", href: "/" },
-    { name: "Events", href: "/events" },
-    { name: "Members", href: "/members" },
-    { name: "Gallery", href: "/gallery" },
-    { name: "Projects", href: "/projects" },
-    { name: "History", href: "/history" },
   ];
 
   return (
@@ -29,7 +24,6 @@ export const Navbar = () => {
         href="/"
         className="flex title-font font-medium items-center text-gray-900"
       >
-        <Image src="/logo.png" width={40} height={40} alt={"image"} />
         <span className="ml-3 font-extrabold text-2xl bg-gradient-to-r from-indigo-400 to-pink-600 bg-clip-text text-transparent"> CleverBook</span>
       </Link>
       <nav className="flex flex-wrap items-center text-base justify-between max-md:hidden">

@@ -20,7 +20,7 @@ export function Crousel() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full max-w-xs lg:w-3/5 md:w-1/2 "
+      className="w-full max-w-lg lg:w-3/5 md:w-1/2 "
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
@@ -28,11 +28,11 @@ export function Crousel() {
       {reviews.map((item, index: any) => (
           <CarouselItem key={index}>
             <div className="p-1">
-              <Card className="justify-center">
-                <img className="item-center" src={item.image} alt=""/>
+              <Card className="text-center flex items-center w-full justify-center flex-col  bg-slate-300 dark:bg-slate-800">
+                <img className="h-20 w-20 border items-center justify-center border-r-50 rounded-full mt-10 mb-5" src={item.image} alt=""/>
                 <CardTitle>{item.name}</CardTitle>
                 <p>{item.title}</p>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
+                <CardContent className="flex aspect-square items-center p-6">
                   <span >{item.description}</span>
                 </CardContent>
               </Card>
@@ -40,8 +40,8 @@ export function Crousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="bg-slate-300 dark:bg-slate-800" />
+      <CarouselNext  className="bg-slate-300 dark:bg-slate-800 "/>
     </Carousel>
   )
 }

@@ -1,19 +1,35 @@
 import React from 'react'
+// import Button from './Button'
+import Image from 'next/image'
 
-export default function CTA() {
+const CTA = () => {
   return (
-    <section className="text-gray-600 dark:text-slate-200 body-font">
-  <div className="container px-5 py-24 mx-auto">
-    <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
-        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+  <div className="mx-auto w-full py-24 sm:px-6 sm:py-32 lg:px-8">
+    <div className="relative isolate overflow-hidden bg-gray-900 dark:bg-slate-200 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+      <svg viewBox="0 0 1024 1024" className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0" aria-hidden="true">
+        <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
+        <defs>
+          <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+            <stop stop-color="#7775D6" />
+            <stop offset="1" stop-color="#E935C1" />
+          </radialGradient>
+        </defs>
       </svg>
-      <p className="leading-relaxed text-lg">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p>
-      <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
-      <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
-      <p className="text-gray-500 dark:text-slate-300">Senior Product Designer</p>
+      <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+        <h2 className="text-3xl font-bold tracking-tight text-white dark:text-slate-900 sm:text-4xl">Stop Wandering, Start Discovering.</h2>
+        <p className="mt-6 text-lg leading-8 text-gray-300 dark:text-slate-800">Find your next great read with personalized recommendations from Cleverbook.</p>
+        <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+          <a href="#" className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-slate-200 dark:text-slate-800 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Start Your Free Trial Today!</a>
+          <a href="#" className="text-sm font-semibold leading-6 text-slate-200 dark:text-slate-800">Learn more <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div className="relative mt-16 h-80 lg:mt-8">
+        <img className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" src="https://cdn.dribbble.com/userupload/13193300/file/original-d5c970aea03237d647f5ab56e8d9efeb.png?resize=1024x768" alt="App screenshot" width="1824" height="1080"/>
+      </div>
     </div>
   </div>
-</section>
+
   )
 }
+
+export default CTA

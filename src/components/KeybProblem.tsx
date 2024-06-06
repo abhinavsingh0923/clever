@@ -19,14 +19,11 @@ export default function KeybProblem() {
         <div className="flex flex-wrap -m-4">
           {questions.map((item, index: any) => (
             <div className="p-4 lg:w-1/4">
-              <div className="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 dark:text-gray-900 mb-1">
-                  {item.category}
-                </h2>
-                <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
+              <div className="h-full bg-slate-300 dark:bg-slate-800 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                <h1 className="title-font sm:text-2xl text-xl font-medium dark:text-slate-100 mb-3">
                   {item.title}
                 </h1>
-                <p className="leading-relaxed mb-3">{item.description}</p>
+                <p className="leading-relaxed mb-3 dark:text-slate-400">{item.description}</p>
                 <HoverCard>
                   <HoverCardTrigger className="text-indigo-500 inline-flex items-center">
                     Learn More
