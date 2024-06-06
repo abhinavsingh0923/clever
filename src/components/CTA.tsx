@@ -19,7 +19,7 @@ const CTA = () => {
         <h2 className="text-3xl font-bold tracking-tight text-white dark:text-slate-900 sm:text-4xl">Stop Wandering, Start Discovering.</h2>
         <p className="mt-6 text-lg leading-8 text-gray-300 dark:text-slate-800">Find your next great read with personalized recommendations from Cleverbook.</p>
         <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-          <a href="#" className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-slate-200 dark:text-slate-800 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Start Your Free Trial Today!</a>
+          <a href="#" className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-slate-800 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Start Your Free Trial Today!</a>
           <a href="#" className="text-sm font-semibold leading-6 text-slate-200 dark:text-slate-800">Learn more <span aria-hidden="true">→</span></a>
         </div>
       </div>
